@@ -11,7 +11,7 @@ plt.rcParams.update(**{'figure.dpi':150})
 plt.style.use('ggplot')
 
 # Read the CSV file
-df = pd.read_csv('/Users/juanraul/Desktop/Northwestern/Senior/Spring 2023/Data_Eng_300/Assignment 1/data.csv')
+df = pd.read_csv('/app/data.csv')
 
 ##Question 1
 
@@ -53,7 +53,7 @@ for col in num_cols:
 df_norm = df2[norm_cols].copy()
 
 #save to csv
-df_norm.to_csv('/Users/juanraul/Desktop/Northwestern/Senior/Spring 2023/Data_Eng_300/Assignment 1/transformed_data.csv', index=False)
+df_norm.to_csv('/tmp/transformed_data.csv', index=False)
 
 #Make boxplots of normalized columns and remove outliers through clustering
 for col in norm_cols:
