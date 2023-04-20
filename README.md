@@ -34,15 +34,25 @@ Here are the outputs of the graphs from the non-normalized numerical features:
 
 Many of this variables are very skewed, and the code checked for features with a skewness over 1 or lesser than -1. Here is the skewness of the numerical features:
 
+
 TARGET                        3.078365
+
 CNT_CHILDREN                  2.330726
+
 CNT_FAM_MEMBERS               1.148404
+
 AMT_INCOME_TOTAL              7.245098
+
 AMT_CREDIT                    1.199083
+
 DAYS_EMPLOYED                 2.050958
+
 DAYS_BIRTH                    0.115488
+
 EXT_SOURCE_2                 -0.797461
+
 EXT_SOURCE_3                 -0.465799
+
 AMT_REQ_CREDIT_BUREAU_YEAR    1.354335
 
 The 7 features that failed the skewness check where transformed and stored in the csv file: 'transformed_data.csv'
