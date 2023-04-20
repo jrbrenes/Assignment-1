@@ -12,7 +12,10 @@ docker build --no-cache -t assignment-1 .
 #### To run the code in the container
 docker run -v "$(pwd)/data:/tmp/data" -it assignment-1:latest
 
-### About the script and its outputs
+### About the dockerfile
+It uses ubuntu, and it calls the data.csv file, the python script, as well as the requirements txt file. It also copies the transformed data csv file to the current working directory after it is done running.
+
+### About the python script and its outputs
 It should outptut a data file with the transformed csv file. The python script 'Assignment 1' was originally a jupyter notebook, as it was a more convenient way of debugging as well as saving the output. The cells were copied and pasted into the current python script, along with the pseudocode for each underlying block of code. The script uses no functions, and it prints the output directly. The script should output charts for all of the required features, as well as save the transformed dataframe into a csv. The output of the cells was saved separately and will be contained in this readme file, as well as the discussion regarding the output.
 
 ## Question 1
